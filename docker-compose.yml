@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+    beakerx-cling:
+        build: .
+        image: liudonghua123/beakerx-cling:latest
+        ports:
+            - "18888:8888"
+        volumes:
+            - ./work:/work
+        restart: always
